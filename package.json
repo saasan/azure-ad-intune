@@ -1,0 +1,16 @@
+{
+  "name": "azure-ad-intune",
+  "version": "1.0.0",
+  "description": "Azure AD と Intune",
+  "dependencies": {},
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.7.0"
+  },
+  "scripts": {
+    "build": "npx marp --html --theme assets/theme.css index.md -o docs/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saasan/azure-ad-intune.git"
+  }
+}
