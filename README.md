@@ -1,4 +1,4 @@
-# Azure AD と Intune
+# Azure AD と Microsoft Intune
 
 ## スライドの生成方法
 

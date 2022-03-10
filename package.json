@@ -1,7 +1,7 @@
 {
   "name": "azure-ad-intune",
   "version": "1.0.0",
-  "description": "Azure AD と Intune",
+  "description": "Azure AD と Microsoft Intune",
   "dependencies": {},
   "devDependencies": {
     "@marp-team/marp-cli": "^1.7.0"
