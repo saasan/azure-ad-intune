@@ -33,33 +33,46 @@ paginate: true
 
 <!-- _class: first-child-center -->
 
-PC のポリシー管理
+PC のポリシー管理はできない
 ↓
 後述の Microsoft Intune にてデバイスを管理
-
-
-## シングルサインオン (SSO)
-
-<!-- _class: first-child-center -->
-
-Azure AD の アカウントで Windows 10 へログイン
-↓
-Microsoft 365 など
-各種サービスへ自動でログイン
 
 
 ## Azure AD Connect
 
 オンプレミスの AD から Azure AD へ同期
+
 - ユーザー
 - パスワード
 - グループ
 
+### ハイブリッド Azure AD
 
-## Microsoft 365 (Office)
+PC がオンプレミスの AD と Azure AD 両方に参加した状態
 
+
+## Microsoft 365 Apps for business
+
+- Office アプリだけが利用可能
 - Azure AD のユーザーに対してライセンスを割り当て
-- グループへライセンスを割り当てることも可能
+
+
+## Azure AD のエディション
+
+- Free (無償)
+- Office 365 アプリ (Office 365 に付属)
+- Premium P1
+- Premium P2
+
+
+## Azure AD 有償版の機能 (主なもの)
+
+- 条件付きアクセス (P1 以上)
+  例 : アクセス元の IP アドレス制限
+- リスクベースの条件付きアクセス (P2)
+  例 : いつもと違う国からアクセスされたらリスクが高い
+- モバイルデバイス管理 (MDM) への自動登録 (P1 以上)
+  → Azure AD 参加した PC を自動で Intune へ登録可能
 
 
 ## Microsoft Intune とは？
@@ -79,9 +92,14 @@ Microsoft 365 など
 
 ## Microsoft Intune でできること
 
+- ゼロタッチキッティング
 
 
 ## Microsoft Intune でできないこと
+
+
+
+## Microsoft Intune 有償版の機能
 
 
 
