@@ -33,6 +33,7 @@ paginate: true
 
 <!-- _class: first-child-center -->
 
+オンプレの AD と異なり
 PC のポリシー管理はできない
 ↓
 後述の Microsoft Intune にてデバイスを管理
@@ -45,10 +46,6 @@ PC のポリシー管理はできない
 - ユーザー
 - パスワード
 - グループ
-
-### ハイブリッド Azure AD
-
-PC がオンプレミスの AD と Azure AD 両方に参加した状態
 
 
 ## Microsoft 365 Apps for business
@@ -82,28 +79,57 @@ PC がオンプレミスの AD と Azure AD 両方に参加した状態
 - クラウドベースのサービス
 
 
-## Microsoft Intune の対応 OS
+## Intune の対応 OS
 
-- Windows
-- Mac
+- Windows 10
+- macOS
 - Android
 - iOS
 
 
-## Microsoft Intune でできること
+## Intune のエディション
 
-- ゼロタッチキッティング
+- Intune 自体にエディションはない
+- Microsoft 365 や EMS に含まれる
 
+### Enterprise Mobility + Security (EMS)
 
-## Microsoft Intune でできないこと
-
-
-
-## Microsoft Intune 有償版の機能
-
+- Azure AD などとセットになったパッケージ
+- P1: Azure AD Premium P1 + Intune など
 
 
-## Microsoft Intune の制限
+## Intune でできること
+
+- デバイスのポリシー管理
+- アプリ管理
+- ゼロタッチキッティング (Windows Autopilot)
+- Windows Update の管理
+
+
+## デバイスのポリシー管理
+
+
+
+## アプリ管理
+
+
+
+## ゼロタッチキッティング<br>(Windows Autopilot)
+
+1. あらかじめ PC の ID を取得し Intune へ登録しておく
+1. PC を利用者に送付
+1. PC の初回起動時に Azure AD アカウントでログイン
+1. 自動でアプリのインストールなどが行われる
+
+メーカーと相談すれば ID を購入時に教えてもらうことも可能
+→ PC をメーカーから利用者へ直送可
+
+
+## Windows Update の管理
+
+
+
+## Intune の制限
 
 - デバイスは1ユーザーあたり15台まで
 
