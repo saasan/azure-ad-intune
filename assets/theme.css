@@ -15,22 +15,32 @@ section::after
   content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
 }
 
+section h2
+{
+  font-size: 1.5em;
+}
+
 section.lead h2
 {
-  font-size: 100px;
+  font-size: 2em;
 }
 
-section.font-size-small
+section.font-size-big :not(h2)
 {
-  font-size: 38px;
+  font-size: 1.25em;
 }
 
-section.font-size-xsmall
+section.font-size-small :not(h2)
 {
-  font-size: 32px;
+  font-size: 0.75em;
 }
 
-section.first-child-center p:first-of-type
+section.font-size-xsmall :not(h2)
+{
+  font-size: 0.5em;
+}
+
+section.center :not(h2)
 {
   text-align: center;
 }

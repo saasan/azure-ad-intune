@@ -31,7 +31,7 @@ paginate: true
 
 ## Azure AD でできないこと
 
-<!-- _class: first-child-center -->
+<!-- _class: center font-size-big -->
 
 オンプレの AD と異なり
 PC のポリシー管理はできない
@@ -79,14 +79,6 @@ PC のポリシー管理はできない
 - クラウドベースのサービス
 
 
-## Intune の対応 OS
-
-- Windows 10
-- macOS
-- Android
-- iOS
-
-
 ## Intune のエディション
 
 - Intune 自体にエディションはない
@@ -98,21 +90,51 @@ PC のポリシー管理はできない
 - P1: Azure AD Premium P1 + Intune など
 
 
+## Intune の対応 OS
+
+- Windows 10
+- macOS
+- Android
+- iOS
+
+※以下では主に Windows 10 向けのものを紹介
+
+
 ## Intune でできること
 
 - デバイスのポリシー管理
 - アプリ管理
 - ゼロタッチキッティング (Windows Autopilot)
-- Windows Update の管理
+- デバイスの遠隔操作
+
+## デバイスのポリシー管理 (1)
+
+- Windows 10 の機能や設定の制限
+- 更新プログラムの管理
+  - 更新リングの設定
+  - 会社標準のバージョン設定
+- Wi-Fi、VPN 設定の配布
 
 
-## デバイスのポリシー管理
+## デバイスのポリシー管理 (2)
 
+- セキュリティの設定
+  - ウイルス対策 (Microsoft Defnder)
+  - ディスクの暗号化 (BitLocker、FileVault)
+  - ファイアウォール
+    - Windows ファイアウォール
+    - macOS ファイアウォール
 
 
 ## アプリ管理
 
-
+- アプリの展開
+  - インストーラー (MSI, .exe)
+  - Microsoft Store アプリ
+- アプリの割り当て
+  - 必須
+  - アンインストール
+  - 使用可能
 
 ## ゼロタッチキッティング<br>(Windows Autopilot)
 
@@ -125,14 +147,12 @@ PC のポリシー管理はできない
 → PC をメーカーから利用者へ直送可
 
 
-## Windows Update の管理
+## デバイスの遠隔操作
 
-
-
-## Intune の制限
-
-- デバイスは1ユーザーあたり15台まで
-
+- リモート操作 (リモートデスクトップ)
+- 再起動
+- 紛失したデバイスを探す
+- データ消去 (ワイプ)
 
 
 ## 参考文献
